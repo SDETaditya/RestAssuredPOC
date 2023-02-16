@@ -11,27 +11,64 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
+    "name": "aditya",
+    "job": "tester"
+}
+HTTP/1.1 201 Created
+Date: Thu, 16 Feb 2023 20:24:47 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"52-JBGT51Lx9TLvc3dKXk6YL1MupGI"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qjOKC1iR3bKUO1bm88KuVPl5Gp29552VH1S5Oj45irB9TWnLDJl%2BuUsrm92cM2VR%2BIuSYSWiN5wHfa0QmUuYWJ9RDBeqi8uaV99FJy4eDJ%2B%2FaX8PKu7kn2bqlA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 79a90240fd3112c7-IAD
+
+{
+    "name": "aditya",
+    "job": "tester",
+    "id": "808",
+    "createdAt": "2023-02-16T20:24:47.662Z"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
     "name": "nupur",
     "job": "developer"
 }
 HTTP/1.1 201 Created
-Date: Thu, 16 Feb 2023 19:54:08 GMT
+Date: Thu, 16 Feb 2023 20:24:50 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 84
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"54-pjuvY/kxQMVzg/vAukAeT5hGTwY"
+Etag: W/"54-ucMLf+dBNUPxlvA7WXpRlAi+FPU"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PhGLIE0tm0Ohm6%2F4cqQS6OfOdI%2BHy6irggw0eKkrmQbJ3zI0GgbciwpekswZQnhR3gwA%2BsTBKCm6dXqi6xYF6ezZjQ%2B9OHFKFNfFQ%2FH8m1o0HpMFlv%2BOL4pR8g%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pgMsCkHQHgtfYzD1y1x4E3Ov86wvFbZbKAbHjoehbE26BxTZGJ0hs%2BWvoSduN%2Ba7CY%2FQMkDrv4COpub8XeRmCOulx%2FUh23qgsls4jUVC96coKqkxvjt9uNP4Bg%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 79a8d55c7ececf60-IAD
+CF-RAY: 79a90250cce33800-IAD
 
 {
     "name": "nupur",
     "job": "developer",
-    "id": "765",
-    "createdAt": "2023-02-16T19:54:08.871Z"
+    "id": "800",
+    "createdAt": "2023-02-16T20:24:50.190Z"
 }

@@ -16,10 +16,11 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utility {
 
-	RequestSpecification reqspec;
+	public static RequestSpecification reqspec;
 	
 	
 	public RequestSpecification requestSpec() throws IOException {
+		if (reqspec==null) {
 		PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
 		reqspec = new RequestSpecBuilder()
 				.setBaseUri(getPropertyVal("url"))
@@ -27,6 +28,8 @@ public class Utility {
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
 				.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				.build();
+		return reqspec;
+		}
 		return reqspec;
 	}
 	public String getPropertyVal(String key) throws IOException {

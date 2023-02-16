@@ -6,8 +6,9 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
+import Utility.Resources;
 import Utility.Utility;
-import io.restassured.http.ContentType;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -34,8 +35,10 @@ public class StepDefinitions extends Utility{
 
 	
 	@When("User calls {string} with POST http request")
-	public void user_calls_with_post_http_request(String string) {
-	  response  = reqspec.when().post("/api/users").then().extract().response();
+	public void user_calls_with_post_http_request(String resourceName) {
+	Resources resource=Resources.valueOf(resourceName);
+	
+		response  = reqspec.when().post(resource.getResource()).then().extract().response();
 	}
 	@Then("The API call is successful with status code {int}")
 	public void the_api_call_is_successful_with_status_code(Integer statusCode) {
