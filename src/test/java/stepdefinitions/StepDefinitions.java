@@ -19,6 +19,8 @@ public class StepDefinitions extends Utility{
 	RequestSpecification reqspec;	
 	Response response;
 	String responseString;
+	JsonPath jpath;
+	static String id;
 
 	@Given("Add User Payload with {string} {string}")
 	public void add_user_payload_with(String name, String job) throws IOException {
@@ -34,25 +36,45 @@ public class StepDefinitions extends Utility{
 
 
 	
-	@When("User calls {string} with POST http request")
-	public void user_calls_with_post_http_request(String resourceName) {
+	@When("{string} is called with {string} http request")
+	public void user_calls_with_post_http_request(String resourceName, String httpmethod) {
 	Resources resource=Resources.valueOf(resourceName);
-	
-		response  = reqspec.when().post(resource.getResource()).then().extract().response();
-	}
-	@Then("The API call is successful with status code {int}")
-	public void the_api_call_is_successful_with_status_code(Integer statusCode) {
+		if(httpmethod.equalsIgnoreCase("post")) {
+			response  = reqspec.when().post(resource.getResource());
+		}
+		else if(httpmethod.equalsIgnoreCase("get")) {
+			
+				response  = reqspec.when().get(resource.getResource());
+			}
+		}
 		
-	    assertEquals(Integer.valueOf(response.getStatusCode()), statusCode);
+
+	@Then("The API call is successful with status code {string}")
+	public void the_api_call_is_successful_with_status_code(String statusCode) {
+		
+	    assertEquals(String.valueOf(response.getStatusCode()), statusCode);
 	}
 	@Then("{string} in response body is {string}")
 	public void in_response_body_is(String key, String val) {
 		responseString = response.asString();
 	
-		JsonPath jpath = new JsonPath(responseString);
-		
-		assertEquals(jpath.get(key).toString(),val);
+		jpath = new JsonPath(responseString);
+		 
+		id=jpath.get("id");
+		assertEquals(val,jpath.get(key).toString());
 	}
+
+	
+
+	@Given("user id of user")
+	public void user_id_of_user() throws IOException {
+		
+	
+				reqspec = given()
+						.spec(requestSpec()).pathParam("usrid", id);
+				
+	}
+
 
 
 
