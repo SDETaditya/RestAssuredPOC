@@ -1,0 +1,37 @@
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "aditya",
+    "job": "AQA"
+}
+HTTP/1.1 201 Created
+Date: Thu, 16 Feb 2023 19:33:24 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 79
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"4f-ri+E2lTW9UmHdhkD9UFgr7tLqZY"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pK5sG0L1FOwSOArpr9uYzYF%2B2rIcYvsoImcgfiAiAUV7QlWK2J%2BINhka01T1UQtSi%2Btus4GmbqLnrRajqMqjhcVqpun%2Bqdc0GuLXzvK80aTsQv8mOa46rufEmg%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 79a8b6f80a3c380b-IAD
+
+{
+    "name": "aditya",
+    "job": "AQA",
+    "id": "221",
+    "createdAt": "2023-02-16T19:33:23.998Z"
+}
