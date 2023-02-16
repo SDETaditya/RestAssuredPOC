@@ -11,27 +11,27 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "aditya",
-    "job": "AQA"
+    "name": "nupur",
+    "job": "developer"
 }
 HTTP/1.1 201 Created
-Date: Thu, 16 Feb 2023 19:33:24 GMT
+Date: Thu, 16 Feb 2023 19:54:08 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 79
+Content-Length: 84
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"4f-ri+E2lTW9UmHdhkD9UFgr7tLqZY"
+Etag: W/"54-pjuvY/kxQMVzg/vAukAeT5hGTwY"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pK5sG0L1FOwSOArpr9uYzYF%2B2rIcYvsoImcgfiAiAUV7QlWK2J%2BINhka01T1UQtSi%2Btus4GmbqLnrRajqMqjhcVqpun%2Bqdc0GuLXzvK80aTsQv8mOa46rufEmg%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PhGLIE0tm0Ohm6%2F4cqQS6OfOdI%2BHy6irggw0eKkrmQbJ3zI0GgbciwpekswZQnhR3gwA%2BsTBKCm6dXqi6xYF6ezZjQ%2B9OHFKFNfFQ%2FH8m1o0HpMFlv%2BOL4pR8g%3D%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 79a8b6f80a3c380b-IAD
+CF-RAY: 79a8d55c7ececf60-IAD
 
 {
-    "name": "aditya",
-    "job": "AQA",
-    "id": "221",
-    "createdAt": "2023-02-16T19:33:23.998Z"
+    "name": "nupur",
+    "job": "developer",
+    "id": "765",
+    "createdAt": "2023-02-16T19:54:08.871Z"
 }

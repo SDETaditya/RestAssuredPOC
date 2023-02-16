@@ -18,15 +18,21 @@ public class StepDefinitions extends Utility{
 	RequestSpecification reqspec;	
 	Response response;
 	String responseString;
-	@Given("Add User Payload")
-	public void add_user_payload() throws IOException {
-		TestData td = new TestData();
+
+	@Given("Add User Payload with {string} {string}")
+	public void add_user_payload_with(String name, String job) throws IOException {
+	TestData td = new TestData();
 		
 		reqspec=given()
 				.spec(requestSpec())
 				
-				.body(td.AddUserpayload());
+				.body(td.AddUserpayload(name, job));
+	    
 	}
+
+
+
+	
 	@When("User calls {string} with POST http request")
 	public void user_calls_with_post_http_request(String string) {
 	  response  = reqspec.when().post("/api/users").then().extract().response();
